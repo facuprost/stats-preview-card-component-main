@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --mainBackground: hsl(233, 47%, 7%);
+    --cardBackground: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --mainHeadingAndStats: hsl(0, 0%, 100%);
+    --mainParagraph: hsla(0, 0%, 100%, 0.75);
+    --statHeadings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+body {
+    max-height: 1440px;
+    height: 100vh;
+    background-color: var(--mainBackground);
+    font-size: 15px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--cardBackground);
+    display: flex;
+    height: 50%;
+    width: 50%;
+    border-radius: 7px;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+    background-image: linear-gradient(
+        hsla(277, 64%, 61%, 0.5) 0%,
+        hsla(277, 64%, 61%, 0.5) 100%
+    ), url(images/image-header-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.left h1 {
+    font-size: 30px;
+    color: var(--mainHeadingAndStats);
+    margin: 70px 70px 40px 50px;
+    text-align: left;
+}
+
+.left span {
+    color: var(--accent);
+}
+
+.left-paragraph {
+    color: var(--mainParagraph);
+    margin: 0px 70px 70px 50px;
+    text-align: left;
+}
+
+.data {
+    margin: 0px 70px 70px 50px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.caja {
+    text-align: start;
+    margin-top: 50px;
+}
+
+.caja b {
+    color: var(--mainHeadingAndStats);
+    font-size: 25px;
+    
+}
+
+.caja p {
+    color: var(--statHeadings);
+    
+}
+
+.attribution {
+    text-align: center;
+    background-color: rgb(184, 174, 174);
+    padding: 5px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: blue;
+}
